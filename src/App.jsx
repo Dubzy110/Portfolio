@@ -1,8 +1,10 @@
 import { Link } from "react-router";
 
 import { CenterHorizontal } from "./components/CenterHorizontal";
+import { useState } from "react";
 
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <>
       <CenterHorizontal>
@@ -12,8 +14,14 @@ function App() {
       </CenterHorizontal>
       <div className="flex flex-col min-h-screen min-w-screen justify-center items-center">
         <div>
-          <button className="" onClick={() => console.log("clicked")}>
-            X
+          <button
+            className=""
+            onClick={() => {
+              console.log("clicked");
+              setCounter((currentValue) => currentValue + 1);
+            }}
+          >
+            {counter}
           </button>
         </div>
         <div>
