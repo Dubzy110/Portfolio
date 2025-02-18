@@ -1,13 +1,11 @@
-import React from "react";
-
-import App from "../../App";
-import About from "../../pages/about";
+import Home from "../Home";
+import About from "../../pages/About";
 
 export const routeConfig = [
   {
     name: "Home",
     to: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     name: "About",
