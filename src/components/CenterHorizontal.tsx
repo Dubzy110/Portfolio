@@ -1,5 +1,3 @@
-import React from "react";
-
-export const CenterHorizontal = ({ children }) => {
+export const CenterHorizontal = ({ children }: any) => {
   return <div className="flex justify-center w-full">{children}</div>;
 };
