@@ -1,5 +1,6 @@
-import Home from "../Home";
+import Home from "../../pages/Home";
 import About from "../../pages/About";
+import Minesweeper from "../../pages/Minesweeper";
 
 export const routeConfig = [
   {
@@ -11,5 +12,10 @@ export const routeConfig = [
     name: "About",
     to: "/About",
     element: <About />,
+  },
+  {
+    name: "Minesweeper",
+    to: "/Minesweeper",
+    element: <Minesweeper />,
   },
 ];

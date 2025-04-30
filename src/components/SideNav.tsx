@@ -24,7 +24,7 @@ const SideNav = () => {
           handleOnClose();
         }}
       >
-        {isSideNavOpen === true ? "X" : "open sidenav"}
+        {isSideNavOpen === true ? "Close Sidenav" : "Open Sidenav"}
       </button>
       {isSideNavOpen === false ? (
         <></>
