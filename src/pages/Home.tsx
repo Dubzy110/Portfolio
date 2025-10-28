@@ -39,17 +39,6 @@ const Home = () => {
             if (counter === 10) {
               console.log("woo");
             }
-
-            // god i love secrets :)
-
-            if (counter === 1001 || counter === -1001) {
-              console.log("Just kidding, there is a prize");
-            } else if (counter > 999 || counter < -999) {
-              console.log(
-                "Wow, you really clicked that many times? Nice! There is no prize though."
-              );
-            }
-
             console.log("Reset");
             setCounter(0);
           }}
