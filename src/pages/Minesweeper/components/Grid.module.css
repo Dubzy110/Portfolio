@@ -1,0 +1,29 @@
+.easyGrid {
+  display: grid;
+  grid-template-columns: repeat(9, 48px);
+  grid-template-rows: repeat(9, 48px);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.mediumGrid {
+  display: grid;
+  grid-template-columns: repeat(16, 48px);
+  grid-template-rows: repeat(16, 48px);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.hardGrid {
+  display: grid;
+  grid-template-columns: repeat(30, 48px);
+  grid-template-rows: repeat(30, 48px);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
