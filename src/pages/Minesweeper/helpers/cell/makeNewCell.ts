@@ -1,4 +1,4 @@
-import { Cell } from "../../Types/Cell";
+import type { Cell } from '../../Types'
 
 export const makeNewCell = (cellIndex: number): Cell => ({
   isMine: false,
@@ -8,4 +8,4 @@ export const makeNewCell = (cellIndex: number): Cell => ({
   mineCount: 0,
   key: `${cellIndex}`,
   id: Math.random() * 1_000_000,
-});
+})

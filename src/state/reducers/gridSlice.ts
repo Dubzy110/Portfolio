@@ -1,16 +1,17 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Difficulty } from "../../pages/Minesweeper/Types/Grid";
+import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
+import type { Difficulty } from '../../pages/Minesweeper/Types'
 
 type GridState = {
-  difficulty: Difficulty;
-};
+  difficulty: Difficulty
+}
 
 const initialState: GridState = {
-  difficulty: "easy",
-};
+  difficulty: 'easy',
+}
 
 export const gridSlice = createSlice({
-  name: "grid",
+  name: 'grid',
   initialState,
   reducers: {
     updateDifficultyAction: (state, action: PayloadAction<Difficulty>) => ({
@@ -18,11 +19,11 @@ export const gridSlice = createSlice({
       difficulty: action.payload,
     }),
   },
-});
+})
 
-export const { updateDifficultyAction } = gridSlice.actions;
+export const { updateDifficultyAction } = gridSlice.actions
 
 export const selectGridState = (rootState: { grid: GridState }): GridState =>
-  rootState.grid;
+  rootState.grid
 
-export default gridSlice.reducer;
+export default gridSlice.reducer

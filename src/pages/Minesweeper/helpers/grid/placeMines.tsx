@@ -1,18 +1,18 @@
-import { cellRatio } from "../../constants/gridConstants";
-import { Cell } from "../../Types/Cell";
-import { getRandomNumberUpToMax } from "../../utils/getRandomNumberUpToMax";
+import { cellRatio } from '../../constants'
+import type { Cell } from '../../Types'
+import { getRandomNumberUpToMax } from '../../utils'
 
 export const placeMines = (grid: Cell[], cellTotal: number): Cell[] => {
-  const mineTotal = Math.round(cellTotal * cellRatio);
-  let counter = 0;
+  const mineTotal = Math.round(cellTotal * cellRatio)
+  let counter = 0
   while (counter < mineTotal) {
-    const mineIndex = getRandomNumberUpToMax(cellTotal);
+    const mineIndex = getRandomNumberUpToMax(cellTotal)
 
     if (grid[mineIndex].isMine) {
-      continue;
+      continue
     }
-    grid[mineIndex].isMine = true;
-    counter++;
+    grid[mineIndex].isMine = true
+    counter++
   }
-  return grid;
-};
+  return grid
+}

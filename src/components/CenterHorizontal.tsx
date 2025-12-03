@@ -1,3 +1,3 @@
-export const CenterHorizontal = ({ children }: any) => {
-  return <div className="flex justify-center w-full">{children}</div>;
-};
+export const CenterHorizontal = ({ children }) => {
+  return <div className="flex justify-center w-full">{children}</div>
+}

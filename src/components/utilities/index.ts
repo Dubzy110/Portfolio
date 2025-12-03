@@ -1,2 +1,2 @@
-export * from "./MyRoutes";
-export * from "./RoutesConfig";
+export * from './MyRoutes'
+export * from './RoutesConfig'

@@ -1,1 +1,1 @@
-export * from "./gridSlice";
+export * from './gridSlice'

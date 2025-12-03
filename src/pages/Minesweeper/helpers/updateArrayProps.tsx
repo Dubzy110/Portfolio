@@ -1,10 +1,10 @@
-import { Cell } from "../Types/Cell";
+import type { Cell } from '../Types'
 
 export const updateArrayProps =
-  (props?: Record<string, any>) => (cellMap: Cell[]) => {
-    let newArray = cellMap.map((val) => ({
+  (props?: Record<string, boolean>) => (cellMap: Cell[]) => {
+    const newArray = cellMap.map((val) => ({
       ...val,
       ...props,
-    }));
-    return newArray;
-  };
+    }))
+    return newArray
+  }
